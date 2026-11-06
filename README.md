@@ -49,4 +49,4 @@ El tiempo que tardan en ocultarse dos cartas distintas se cambia en `js/script.j
 
 - Gemini (Imagenes de las cartas con los personajes)
 - ChatGPT(Imagenes de fondo y portada)
--Claude (Apoyo para el desarrollo de las funcionones:  `function guardarRecord(datos)`, `function leerRecord()`, `function formatoTiempo(total)`)
+- Claude (Apoyo para el desarrollo de las funcionones:  `function guardarRecord(datos)`, `function leerRecord()`, `function formatoTiempo(total)`)
