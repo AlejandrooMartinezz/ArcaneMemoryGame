@@ -4,6 +4,12 @@ Juego de memoria (memory) con personajes de la serie *Arcane*, desarrollado con 
 
 Autor: Alejandro Martinez
 
+## Vista previa
+
+<img width="1915" height="932" alt="image" src="https://github.com/user-attachments/assets/e7d64daf-6194-416b-9714-7129a7a7f752" />
+<img width="1917" height="941" alt="image" src="https://github.com/user-attachments/assets/8c82a5b1-2730-4d88-9814-9a330fb2be41" />
+
+
 ## Cómo jugar
 
 1. Abre `main.html` en el navegador.
