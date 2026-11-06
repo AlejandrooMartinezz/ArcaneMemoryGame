@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arcane Memory Game</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Pantalla de inicio -->
+  <main id="pantalla-inicio" class="pantalla">
+    <img class="portada" src="img/portada.jpg" alt="Arcane Memory Game, por Alejandro Martinez">
+    <section class="menu" aria-labelledby="titulo-menu">
+      <h1 id="titulo-menu" class="visually-hidden">Arcane Memory Game</h1>
+      <p class="menu-texto">Encuentra todas las parejas de Piltover y Zaun. Elige la dificultad:</p>
+      <div class="menu-botones">
+        <button class="boton" data-parejas="6">Fácil<small>6 parejas</small></button>
+        <button class="boton" data-parejas="10">Medio<small>10 parejas</small></button>
+        <button class="boton" data-parejas="15">Difícil<small>15 parejas</small></button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pantalla de juego -->
+  <main id="pantalla-juego" class="pantalla" hidden>
+    <header class="barra">
+      <button id="btn-menu" class="boton boton-mini" type="button">Menú</button>
+      <dl class="marcadores">
+        <div><dt>Intentos</dt><dd id="intentos">0</dd></div>
+        <div><dt>Parejas</dt><dd id="parejas">0 / 0</dd></div>
+        <div><dt>Tiempo</dt><dd id="tiempo">00:00</dd></div>
+      </dl>
+      <button id="btn-reiniciar" class="boton boton-mini" type="button">Reiniciar</button>
+    </header>
+
+    <section id="tablero" class="tablero" aria-label="Tablero de cartas"></section>
+    <p id="estado" class="visually-hidden" aria-live="polite"></p>
+  </main>
+
+  <!-- Diálogo de victoria -->
+  <dialog id="dialogo-fin">
+    <h2>¡Todas las parejas encontradas!</h2>
+    <p id="resumen-fin"></p>
+    <p id="record-fin"></p>
+    <div class="menu-botones">
+      <button id="btn-otra" class="boton" type="button">Jugar otra vez</button>
+      <button id="btn-salir" class="boton boton-secundario" type="button">Cambiar dificultad</button>
+    </div>
+  </dialog>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
